@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_course_card_rows",
+  "info": {
+    "displayName": "Course Card Row"
+  },
+  "options": {},
+  "attributes": {
+    "course_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.course-card"
+    }
+  }
+}

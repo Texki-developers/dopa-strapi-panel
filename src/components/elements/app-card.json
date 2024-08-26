@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elements_app_cards",
+  "info": {
+    "displayName": "App Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "is_list": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "dopa_kottakkal_campuses",
+  "info": {
+    "singularName": "dopa-kottakkal-campus",
+    "pluralName": "dopa-kottakkal-campuses",
+    "displayName": "Dopa Kottakkal Campus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.banner"
+    },
+    "course_card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.course-card-row"
+    },
+    "feature_card_row": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.feature-card-row"
+    },
+    "gallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.image-block"
+    }
+  }
+}

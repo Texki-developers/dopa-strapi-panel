@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_feature_card_rows",
+  "info": {
+    "displayName": "Feature Card Row"
+  },
+  "options": {},
+  "attributes": {
+    "feature_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.feature-card"
+    }
+  }
+}

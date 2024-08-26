@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_directors_sections",
+  "info": {
+    "displayName": "Directors Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "directors": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_alt": {
+      "type": "string"
+    }
+  }
+}

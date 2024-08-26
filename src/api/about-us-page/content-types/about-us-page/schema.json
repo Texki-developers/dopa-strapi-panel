@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_us_pages",
+  "info": {
+    "singularName": "about-us-page",
+    "pluralName": "about-us-pages",
+    "displayName": "About Us page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "about_banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.banner"
+    },
+    "directors_section": {
+      "displayName": "Directors Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.directors-section"
+    }
+  }
+}

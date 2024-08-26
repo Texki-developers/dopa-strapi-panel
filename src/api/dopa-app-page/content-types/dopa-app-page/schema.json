@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "dopa_app_pages",
+  "info": {
+    "singularName": "dopa-app-page",
+    "pluralName": "dopa-app-pages",
+    "displayName": "Dopa App Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "app_banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.banner"
+    },
+    "dopa_app_cards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.app-card-row"
+    }
+  }
+}

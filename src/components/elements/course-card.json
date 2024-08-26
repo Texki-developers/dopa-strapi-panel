@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_course_cards",
+  "info": {
+    "displayName": "Course Card"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    }
+  }
+}

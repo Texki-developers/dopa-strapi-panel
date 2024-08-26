@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "faculties_pages",
+  "info": {
+    "singularName": "faculties-page",
+    "pluralName": "faculties-pages",
+    "displayName": "Faculties Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.banner"
+    },
+    "faculty_card_row": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.faculty-card-row"
+    }
+  }
+}

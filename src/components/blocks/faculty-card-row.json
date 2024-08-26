@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_blocks_faculty_card_rows",
+  "info": {
+    "displayName": "faculty_card_row"
+  },
+  "options": {},
+  "attributes": {
+    "faculty_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.faculty-card"
+    }
+  }
+}
