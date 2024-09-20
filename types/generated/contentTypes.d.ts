@@ -1021,6 +1021,42 @@ export interface ApiFacultiesPageFacultiesPage extends Schema.SingleType {
   };
 }
 
+export interface ApiHomePageHomePage extends Schema.SingleType {
+  collectionName: 'home_pages';
+  info: {
+    singularName: 'home-page';
+    pluralName: 'home-pages';
+    displayName: 'home page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    HomeBanner: Attribute.Component<'blocks.home-banner'>;
+    HomeAboutUsbanner: Attribute.Component<'blocks.banner', true>;
+    Courses: Attribute.Component<'blocks.course-section', true>;
+    DopaUpdates: Attribute.Component<'blocks.dopa-updates'>;
+    HOMERESULT: Attribute.Component<'blocks.results', true>;
+    HomepageDirectors: Attribute.Component<'blocks.directors-section', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1046,6 +1082,7 @@ declare module '@strapi/types' {
       'api::dopa-kottakkal-campus.dopa-kottakkal-campus': ApiDopaKottakkalCampusDopaKottakkalCampus;
       'api::dopa-thrissur-page.dopa-thrissur-page': ApiDopaThrissurPageDopaThrissurPage;
       'api::faculties-page.faculties-page': ApiFacultiesPageFacultiesPage;
+      'api::home-page.home-page': ApiHomePageHomePage;
     }
   }
 }

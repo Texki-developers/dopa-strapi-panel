@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "home page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HomeBanner": {
+      "displayName": "HomeBanner",
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.home-banner"
+    },
+    "HomeAboutUsbanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.banner"
+    },
+    "Courses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.course-section"
+    },
+    "DopaUpdates": {
+      "displayName": "DopaUpdates",
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.dopa-updates"
+    },
+    "HOMERESULT": {
+      "displayName": "Results",
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.results"
+    },
+    "HomepageDirectors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.directors-section"
+    }
+  }
+}

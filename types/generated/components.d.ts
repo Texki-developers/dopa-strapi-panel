@@ -50,6 +50,19 @@ export interface ElementsAppCard extends Schema.Component {
   };
 }
 
+export interface BlocksResults extends Schema.Component {
+  collectionName: 'components_blocks_results';
+  info: {
+    displayName: 'Results';
+  };
+  attributes: {
+    FirstColumnImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    SecondColumnImage: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+  };
+}
+
 export interface BlocksImageBlock extends Schema.Component {
   collectionName: 'components_blocks_image_blocks';
   info: {
@@ -57,6 +70,20 @@ export interface BlocksImageBlock extends Schema.Component {
   };
   attributes: {
     images: Attribute.Media<'images', true>;
+  };
+}
+
+export interface BlocksHomeBanner extends Schema.Component {
+  collectionName: 'components_blocks_home_banners';
+  info: {
+    displayName: 'HomeBanner';
+  };
+  attributes: {
+    MainHead: Attribute.String;
+    description: Attribute.Text;
+    buttonName: Attribute.String;
+    buttonLink: Attribute.String;
+    image: Attribute.Media<'images' | 'videos'> & Attribute.Required;
   };
 }
 
@@ -80,6 +107,19 @@ export interface BlocksFacultyCardRow extends Schema.Component {
   };
 }
 
+export interface BlocksDopaUpdates extends Schema.Component {
+  collectionName: 'components_blocks_dopa_updates';
+  info: {
+    displayName: 'DopaUpdates';
+  };
+  attributes: {
+    DopaUpdatesImages: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
+}
+
 export interface BlocksDirectorsSection extends Schema.Component {
   collectionName: 'components_blocks_directors_sections';
   info: {
@@ -91,6 +131,20 @@ export interface BlocksDirectorsSection extends Schema.Component {
     description: Attribute.Text;
     image: Attribute.Media<'images'>;
     image_alt: Attribute.String;
+  };
+}
+
+export interface BlocksCourseSection extends Schema.Component {
+  collectionName: 'components_blocks_course_sections';
+  info: {
+    displayName: 'courseSection';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    subtitle: Attribute.String;
+    isTitleBold: Attribute.Boolean;
+    isSubtitleBold: Attribute.Boolean;
   };
 }
 
@@ -136,10 +190,14 @@ declare module '@strapi/types' {
       'elements.faculty-card': ElementsFacultyCard;
       'elements.course-card': ElementsCourseCard;
       'elements.app-card': ElementsAppCard;
+      'blocks.results': BlocksResults;
       'blocks.image-block': BlocksImageBlock;
+      'blocks.home-banner': BlocksHomeBanner;
       'blocks.feature-card-row': BlocksFeatureCardRow;
       'blocks.faculty-card-row': BlocksFacultyCardRow;
+      'blocks.dopa-updates': BlocksDopaUpdates;
       'blocks.directors-section': BlocksDirectorsSection;
+      'blocks.course-section': BlocksCourseSection;
       'blocks.course-card-row': BlocksCourseCardRow;
       'blocks.banner': BlocksBanner;
       'blocks.app-card-row': BlocksAppCardRow;

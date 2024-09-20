@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_blocks_home_banners",
+  "info": {
+    "displayName": "HomeBanner"
+  },
+  "options": {},
+  "attributes": {
+    "MainHead": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttonName": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_results",
+  "info": {
+    "displayName": "Results"
+  },
+  "options": {},
+  "attributes": {
+    "FirstColumnImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "SecondColumnImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
