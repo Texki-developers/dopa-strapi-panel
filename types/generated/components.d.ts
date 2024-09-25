@@ -141,7 +141,7 @@ export interface BlocksCourseSection extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String;
+    name: Attribute.String;
     subtitle: Attribute.String;
     isTitleBold: Attribute.Boolean;
     isSubtitleBold: Attribute.Boolean;
